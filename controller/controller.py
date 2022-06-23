@@ -14,10 +14,10 @@ class controller:
     def calculateMatch(payroll):
         iterator_auxiliar = 1
         iterator = 0
-        while(iterator_auxiliar <= len(payroll)-1 and iterator < len(payroll)):
-            counter = controller.compare_Arrays(payroll[iterator].times, payroll[iterator_auxiliar].times)
-            print (payroll[iterator].name, "-", payroll[iterator_auxiliar].name,"=", counter)
-            iterator_auxiliar += 1
-            if(iterator_auxiliar == len(payroll)-1 and iterator < len(payroll)):
-                iterator_auxiliar = iterator + 2
-                iterator = iterator + 1
+        while(iterator_auxiliar < len(payroll) ):
+                counter = controller.compare_Arrays(payroll[iterator].times, payroll[iterator_auxiliar].times)
+                print (payroll[iterator].name, "-", payroll[iterator_auxiliar].name,"=", counter)
+                iterator_auxiliar += 1
+                if(iterator_auxiliar == len(payroll)):
+                    iterator += 1
+                    iterator_auxiliar = iterator + 1

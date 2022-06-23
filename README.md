@@ -29,10 +29,10 @@ RENE-ASTRID: 3
 ```
 ## Solution
 To provide a solution to the problem posed, two models, two controllers and a main.py file have been defined, whose operating logic is explained below:
-### Models:
+###Models:
 - Employee
 - Schedule
-### Controllers
+###Controllers
 - controller
 - payroll_controller.
 ### Main:
@@ -46,7 +46,7 @@ As a result of this function an array of employees is obtained.
 ### Employee Instance
     For the creation of employee type objects two input parameters are received: name and times, both are text strings (in the getPayroll function the text separated from name and times is sent).
     The employee constructor method is defined, which assigns the value sent from name to the object's own name attribute and on the other hand it declares a 'listTimes' array to which it sends the string times that is separated with the "Split (",")" function, then sent to the getTimes function.
-### getTimes 
+### getEmployee 
     This function is inside the employees class and receives as input an array, in this case the listTimes array, returning an array of time type objects.
     Finally, the result of the getTimes function is assigned to the times attribute of the person object.
 ### calculateMatch function
@@ -66,7 +66,7 @@ Run the following command in your working directory.
 ```
 python main.py
 ```
-## Tests execution
+##Tests execution
 Run the following command in your working directory.
 ```
 pytest -v
